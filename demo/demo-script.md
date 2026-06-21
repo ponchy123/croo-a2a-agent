@@ -8,7 +8,7 @@
 
 **画面**: 项目 Logo 和标题
 **旁白**:
-"大家好，我们是 [团队名称]，今天为大家展示我们的 CROO Agent Hackathon 参赛作品 - 多 Agent 翻译流水线。"
+"大家好，我们是 CROO A2A Team，今天为大家展示我们的 CROO Agent Hackathon 参赛作品 - CROO A2A Agent Chain。"
 
 **字幕**: CROO A2A Agent Chain - 多 Agent 翻译流水线
 
@@ -42,8 +42,8 @@
 **步骤演示**:
 1. 访问 agent.croo.network
 2. 创建 Provider Agent
-3. 配置翻译服务
-4. 设置价格和 SLA
+3. 配置翻译服务（0.1 USDC）
+4. 设置 SLA（5分钟）
 5. 获取 API Key
 
 **字幕**: 
@@ -61,7 +61,7 @@
 
 **演示步骤**:
 1. 启动 Provider Agent
-2. 启动 Requester Agent
+2. 运行 Requester 测试
 3. 发送翻译请求
 4. 展示 Agent 间通信
 5. 显示支付流程
@@ -69,21 +69,19 @@
 
 **终端输出示例**:
 ```
-🚀 Starting Translation Provider Agent...
-✅ Configuration loaded
-✅ Translation service initialized
-📋 Service Configuration:
-{
-  "name": "Translation Agent",
-  "price": 0.1,
-  "sla": "0h 5m"
-}
+🚀 Starting Provider Agent...
+✅ API Key loaded
+📡 Listening for incoming orders...
+websocket connected
+🎯 Provider Agent is running!
 
-📤 Requesting translation...
-Text: "Hello, this is a test of CROO A2A composition."
-Target: zh
-✅ Translation received
-Result: "[中文] Hello, this is a test of CROO A2A composition."
+📥 New negotiation received!
+   Negotiation ID: xxxxxxxx
+✅ Negotiation accepted
+💰 Order paid!
+   Order ID: xxxxxxxx
+⏳ Processing translation...
+✅ Order delivered successfully
 ```
 
 **字幕**: 
@@ -94,23 +92,22 @@ Result: "[中文] Hello, this is a test of CROO A2A composition."
 
 ---
 
-## 技术亮点 (4:00 - 4:30)
+## 代码结构展示 (4:00 - 4:30)
 
-**画面**: 代码片段和技术架构图
+**画面**: VS Code 编辑器
 **旁白**:
-"这个项目的技术亮点包括：
+"项目代码结构清晰，易于扩展：
 
-1. **完整的 CAP 协议集成**
-2. **USDC 链上支付**
-3. **模块化 Agent 设计**
-4. **清晰的代码结构**
+- `examples/provider.ts` - Provider Agent 运行脚本
+- `examples/test-a2a.ts` - A2A 通信测试
+- `src/` - 核心业务逻辑
+- `demo/` - Logo 和演示材料
 
 所有代码都已开源，使用 MIT 许可证。"
 
 **字幕**: 
-- CAP 协议集成
-- USDC 支付
 - 模块化设计
+- 清晰的代码结构
 - 开源代码
 
 ---
@@ -148,7 +145,7 @@ Result: "[中文] Hello, this is a test of CROO A2A composition."
 "谢谢大家！"
 
 **字幕**: 
-GitHub: github.com/yourusername/croo-a2a-agent
+GitHub: github.com/ponchy123/croo-a2a-agent
 Discord: discord.gg/y3xHr3t8nx
 
 ---
