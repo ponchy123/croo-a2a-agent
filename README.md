@@ -46,7 +46,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YOUR_USERNAME/croo-a2a-agent.git
+git clone https://github.com/ponchy123/croo-a2a-agent.git
 cd croo-a2a-agent
 
 # 安装依赖
@@ -180,7 +180,7 @@ croo-a2a-agent/
 
 ## 📞 联系我们
 
-- **GitHub**: https://github.com/YOUR_USERNAME/croo-a2a-agent
+- **GitHub**: https://github.com/ponchy123/croo-a2a-agent
 - **Discord**: CROO Discord 社区
 
 ---
